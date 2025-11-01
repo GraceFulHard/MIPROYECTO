@@ -7,3 +7,138 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
     Author     : usuario
 */
 
+* {
+    background-color: lightgrey;
+}
+h1 {
+    text-align: center;
+   
+}
+
+/* form categorias */
+    .form-categoria {
+      max-width: 500px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      font-family: Arial, sans-serif;
+    }
+
+    .form-categoria__grupo {
+      margin-bottom: 15px;
+    }
+
+    .form-categoria__label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .form-categoria__input {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+      border: none;
+    }
+
+    .form-categoria__botones {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    .form-categoria__boton {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .form-categoria__boton--guardar {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    .form-categoria__boton--cancelar {
+      background-color: #f44336;
+      color: white;
+    }
+
+    .form-categoria__autor {
+      text-align: center;
+      margin-top: 30px;
+      font-style: italic;
+    }
+  
+/*form productos */
+
+    .form-producto {
+      max-width: 500px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      font-family: Arial, sans-serif;
+    }
+
+    .form-producto__grupo {
+      margin-bottom: 15px;
+    }
+
+    .form-producto__label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .form-producto__input,
+    .form-producto__textarea {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .form-producto__textarea {
+      resize: vertical;
+      height: 100px;
+    }
+
+    .form-producto__botones {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    .form-producto__boton {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .form-producto__boton--guardar {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    .form-producto__boton--cancelar {
+      background-color: #f44336;
+      color: white;
+    }
+
+    .form-producto__autor {
+      text-align: center;
+      margin-top: 30px;
+      font-style: italic;
+      color: #555;
+    }
+  

@@ -3,13 +3,55 @@
 Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
 Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
 -->
-<html>
+<html lang="es">
     <head>
-        <title>TODO supply a title</title>
+        <title>TECNOVA</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../../assets/css/estilos.css"/>
     </head>
     <body>
-        <div>TODO write content</div>
+        <div>
+            <<h1>Alta Productos</h1>
+        </div>
+    <form class="form-producto" enctype="multipart/form-data">
+        <div class="form-producto__grupo">
+          <label for="id_producto" class="form-producto__label">ID Producto</label>
+          <input type="number" id="id_producto" name="id_producto" class="form-producto__input" required />
+        </div>
+
+        <div class="form-producto__grupo">
+          <label for="nombre_producto" class="form-producto__label">Nombre del Producto</label>
+          <input type="text" id="nombre_producto" name="nombre_producto" class="form-producto__input" required />
+        </div>
+
+        <div class="form-producto__grupo">
+          <label for="imagen_producto" class="form-producto__label">Imagen del Producto</label>
+          <input type="file" id="imagen_producto" name="imagen_producto" class="form-producto__input" accept="image/*" />
+        </div>
+        
+        <div class="form-producto__grupo">
+          <label for="descripcion_producto" class="form-producto__label">Descripción del Producto</label>
+          <textarea id="descripcion_producto" name="descripcion_producto" class="form-producto__textarea" required></textarea>
+        </div>
+        
+        <div class="form-producto__grupo">
+          <label for="precio_producto" class="form-producto__label">Precio del Producto (ARS)</label>
+          <input type="number" id="precio_producto" name="precio_producto" class="form-producto__input" step="0.01" min="0" placeholder="Ej. 1999.99" required />
+        </div>
+        
+        <div class="form-producto__grupo">
+          <label for="categoria_producto" class="form-producto__label">ID Categoría</label>
+          <input type="number" id="categoria_producto" name="categoria_producto" class="form-producto__input" required />
+        </div>
+
+        <div class="form-categoria__botones">
+          <button type="reset" class="form-categoria__boton form-categoria__boton--cancelar">Cancelar</button>
+          <button type="submit" class="form-categoria__boton form-categoria__boton--guardar">Guardar</button>
+        </div>   
+        
+        <div class="form-producto__autor">Desarrollado por Graciela M. Richetta</div>   
+        
     </body>
 </html>
+
