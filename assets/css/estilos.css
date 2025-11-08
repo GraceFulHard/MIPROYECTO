@@ -15,6 +15,16 @@ h1 {
    
 }
 
+/* public/css/styles.css */
+.logo {
+  width: 100%;
+  max-height: 120px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+
 /* form categorias */
     .form-categoria {
       max-width: 500px;

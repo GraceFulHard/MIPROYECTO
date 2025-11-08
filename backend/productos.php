@@ -1,4 +1,7 @@
 <?php
+    include 'partials/header.php'; ?>
+<!-- Resto del contenido de la vista -->
+
 
 /* 
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
