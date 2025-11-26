@@ -1,27 +1,17 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Categorías</title>
-  <link rel="stylesheet" type="text.css" href="../assets/css/estilos.css">
-</head>
-<body>
+<?php
+require_once '../class/categorias.php';
 
-  <main>
-    <h1></h1>
-    <!-- contenido -->
-  </main>
-
-</body>
-</html>
-
-
-
-  
-
-
-<!-- Resto del contenido de la vista -->
-
-
-
-
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $nombre = $_POST['nombre'] ?? '';
+    
+    if (!empty($nombre)) {
+        $categoria = new Categorias();
+        $categoria->setNombre($nombre);
+        $categoria->guardar();
+        
+        echo "<script>alert('Categoria guardada correctamente'); window.location.href='views/lista_categorias.html';</script>";    
+    } else {
+        echo "<script>alert('Debe ingresar un nombre de categoria'); window.history.back();</script>";
+    }
+}
+?>
