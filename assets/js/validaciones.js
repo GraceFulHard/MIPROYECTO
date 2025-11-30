@@ -2,6 +2,10 @@
 //    alert ("Listo")
 //})
 
+// Esperar a que el DOM esté listo antes de ejecutar las validaciones
+$(document).ready(function() {
+
+//Validacion de formulario de categorias
 $(".form-categoria").submit(function(event){
   var nombre = $("#categoria_nombre").val();   
   if ($.trim(nombre) === ''){

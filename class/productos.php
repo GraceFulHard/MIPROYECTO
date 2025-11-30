@@ -1,6 +1,6 @@
 <?php
 /* @autor Graciela Richetta*/
-require_once 'data_base.php';
+require_once 'database.php';
 
 class Productos {
     private $id;
@@ -32,8 +32,7 @@ class Productos {
     // --- Eliminar producto -
     public function eliminar($id) {
         $sql = "DELETE FROM productos WHERE id = ?";
-        $params = [$id)];
+        $params = [$id];
         return $this->db->delete($sql, $params);
     }    
 }
-?>
